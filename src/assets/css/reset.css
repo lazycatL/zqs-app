@@ -1,0 +1,158 @@
+ body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+ body, button, input, select, textarea {
+   font:12px/1.5 'Microsoft YaHei','Helvetica','PingFangSC-Regular',tahoma, arial, \5b8b\4f53;
+ }
+ h1, h2, h3, h4, h5, h6{ font-size:100%; font-weight: normal;}
+ strong,b{font-weight:normal;}
+ address, cite, dfn, em, var,i { font-style:normal; }
+ code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
+ small{ font-size:12px; }
+ ul, ol { list-style:none; }
+ a { text-decoration:none; }
+ a:hover { text-decoration:underline; }
+ sup { vertical-align:text-top; }
+ sub{ vertical-align:text-bottom; }
+ legend { color:#000; }
+ fieldset, img { border:0; }
+ input,button,select,textarea{outline:none}
+ button, input, select, textarea { font-size:100%; -webkit-appearance: none;border:0}
+ table { border-collapse:collapse; border-spacing:0; }
+ blockquote, q {
+   quotes: none;
+ }
+ div{box-sizing:border-box;}
+ blockquote:before, blockquote:after,
+ q:before, q:after {
+   content: none;
+ }
+ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+   -webkit-box-shadow: 0 0 0px 100px white inset;
+   background: rgba(250, 255, 189,0) none;
+   color: rgb(0, 0, 0);
+ }
+ input::-webkit-search-cancel-button {
+   display: none;
+ }
+ :focus {outline: none;}
+ 
+ body {
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   margin: 0;
+   padding: 0;
+   height: 100%;
+   font-size: 12px;
+   position:relative;
+   /*overflow:hidden;*/
+   box-sizing:border-box;
+   /*阻止默认事件*/
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+ }
+ 
+ body:before {
+   content: ' ';
+   position: fixed;
+   display: -webkit-box;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background: url("/img/Sky.png") no-repeat fixed center center;
+   background-size: cover;  /*把背景图像扩展至足够大，以使背景图像完全覆盖背景区域。*/
+   z-index: -99;
+ }
+ /*滚动条样式设置*/
+ ::-webkit-scrollbar {
+   width: 1px;
+   height: 1px;
+ }
+ 
+ ::-webkit-scrollbar-track-piece {
+   background-color: rgba(0, 0, 0, 0.2);
+   -webkit-border-radius: 1px;
+ }
+ 
+ ::-webkit-scrollbar-thumb:vertical {
+   height: 1px;
+   background-color: rgba(125, 125, 125, 0.7);
+   -webkit-border-radius: 1px;
+ }
+ 
+ ::-webkit-scrollbar-thumb:horizontal {
+   width: 1px;
+   background-color: rgba(125, 125, 125, 0.7);
+   -webkit-border-radius: 2px;
+ }
+ 
+ .noNum {
+   font-size: 0.32rem !important;
+   color: #b5b7bc !important;
+   text-align: center;
+ }
+ /*个人页面的无数据*/
+ .list-in{
+   border-top: 0.5px solid #D3D3D8;
+ }
+ .list-in .noNum{
+   margin: 0 20px 18px;
+   height:60px;
+   line-height: 60px;
+ }
+ .hb-main {
+   margin-bottom: 150px;
+ }
+ .hb-main-tab {
+   opacity:0.99;
+   padding-bottom: 15px;
+   margin: 13px 8px !important;
+   background: rgba(255, 255, 255, 0.90);
+   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(26, 34, 44, 0.24);
+   border-radius: 10px !important;
+ }
+ .hb-main-tab-top {
+   margin: 0 8px !important;
+   margin-bottom: 13px!important;
+   margin-top: 1.2rem !important;
+   background: rgba(255, 255, 255, 0.90);
+   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(26, 34, 44, 0.24);
+   border-radius: 10px !important;
+ }
+ .hb-main-dateFixed{
+   display: flex;
+   position: fixed;
+   z-index: 10;
+   height: 1rem;
+   left:0;
+   top: 2.1rem;
+   right: 0;
+   background: #FFFFFF;
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12);
+   border-radius:0 0 10px 10px;
+   align-items: center;
+   margin:auto 8px;
+ }
+ .hb-main-tab-dateFixed{
+   display: flex;
+   position: fixed;
+   z-index: 11;
+   height: 1rem;
+   left:30%;
+   top: 1.20rem;
+   right: 0;
+   background: #FFFFFF;
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12);
+   border-radius:0 0 0.2rem 0.2rem;
+   align-items: center;
+   margin:auto 0.16rem;
+ }
+ .isBarFixed{
+   left:30%;
+   top: 1.2rem;
+   right: 0;
+   position: fixed;
+   z-index: 11;
+ }
+ 
