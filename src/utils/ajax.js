@@ -30,6 +30,17 @@ axios.interceptors.request.use(config => {
 
 //响应拦截器即异常处理
 axios.interceptors.response.use(response => {
+
+  if (response.data.code === 1) {
+    if (response.data.data && response.data.data.pagecode) {
+      store.commit(types.PAGECODE, response.data.data.pagecode)
+    }
+  } else if (response.data.code === -2) {
+    store.commit(types.LOGOUT)
+    router.replace({path: '/login',
+      query: {redirect: router.currentRoute.fullPath}
+    })
+  }
   return response
 }, error => {
   if (error && err.response) {
