@@ -2,9 +2,7 @@ import service from '@/utils/ajax'
 import store from '../store/index'
 
 //  测试
- const host = 'http://q.zqs.reignwood.com/bi-web'
-// 正式
-// const host = 'http://zqs.reignwood.com/bi-web'
+ const host = process.env.BASE_URL
 
 export default {
   imageUrl: host + '/userphoto/getPhoto?usercode=', // 头像存放路径

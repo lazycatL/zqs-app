@@ -34,7 +34,7 @@
    display: none;
  }
  :focus {outline: none;}
- 
+
  body {
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
@@ -51,7 +51,7 @@
    -moz-user-select: none;
    -ms-user-select: none;
  }
- 
+
  body:before {
    content: ' ';
    position: fixed;
@@ -60,7 +60,7 @@
    left: 0;
    height: 100%;
    width: 100%;
-   background: url("/img/Sky.png") no-repeat fixed center center;
+   background: url("../img/background.png") no-repeat fixed center center;
    background-size: cover;  /*把背景图像扩展至足够大，以使背景图像完全覆盖背景区域。*/
    z-index: -99;
  }
@@ -69,24 +69,24 @@
    width: 1px;
    height: 1px;
  }
- 
+
  ::-webkit-scrollbar-track-piece {
    background-color: rgba(0, 0, 0, 0.2);
    -webkit-border-radius: 1px;
  }
- 
+
  ::-webkit-scrollbar-thumb:vertical {
    height: 1px;
    background-color: rgba(125, 125, 125, 0.7);
    -webkit-border-radius: 1px;
  }
- 
+
  ::-webkit-scrollbar-thumb:horizontal {
    width: 1px;
    background-color: rgba(125, 125, 125, 0.7);
    -webkit-border-radius: 2px;
  }
- 
+
  .noNum {
    font-size: 0.32rem !important;
    color: #b5b7bc !important;
@@ -155,4 +155,3 @@
    position: fixed;
    z-index: 11;
  }
- 
