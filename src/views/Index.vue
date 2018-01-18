@@ -11,7 +11,7 @@
 
         </div>
       <div class="main">
-
+          <hb-header></hb-header>
 
           <transition>
             <router-view class="router-view"></router-view>
@@ -24,7 +24,7 @@
 
 <script>
   import { Drawer,ViewBox,XHeader } from 'vux'
-
+  import hbHeader from '@/components/hb-header.vue'
   export default {
     data () {
       return {
@@ -32,6 +32,7 @@
       }
     },
     components : {
+      hbHeader,
       Drawer,ViewBox,XHeader
     },
     computed: {
@@ -73,12 +74,8 @@
         background: lightpink;
       }
     }
-    .header{
-      width:100%;
-      position:absolute;
-      left:0;
-      top:0;
-      z-index:99;
+    .main{
+      width: 70%;
     }
   }
 
