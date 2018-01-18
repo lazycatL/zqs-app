@@ -6,14 +6,18 @@ Vue.use(Vuex)
 const store = new Vuex.Store({
   state: {
     isLogin: false,
-    userPower: []
+    isLoading: false,
+    user: {}
   },
   mutations: {
     isLogin: function (state, data) {
       state.isLogin = data
     },
-    userPower: function (state, data) {
-      state.userPower = data
+    isLoading (state, data) {
+      state.isLoading = data
+    },
+    user: function (state, data) {
+      state.user = data
     }
   }
 })

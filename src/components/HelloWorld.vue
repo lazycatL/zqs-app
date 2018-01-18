@@ -14,7 +14,7 @@
   import util from '../utils/number.js'
 
   export default {
-    name: 'hello',
+    name: 'hello', type="ecmascript-6"
     data () {
       return {
         msg: 'Welcome to Your Vue.js App',
