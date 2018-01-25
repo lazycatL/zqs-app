@@ -9,10 +9,9 @@ import './assets/css/reset.css'// 初始化样式
 import './utils/flexible' // 初始化HTML的font-size
 
 Vue.config.productionTip = false
-Vue.prototype.api = api
-Vue.prototype.util = util
-Vue.prototype.number = Numbers
-Vue.prototype.store = store
+Vue.prototype.$api = api
+Vue.prototype.$util = util
+Vue.prototype.$number = Numbers
 
 // 添加Fastclick移除移动端点击延迟
 const FastClick = require('fastclick')
